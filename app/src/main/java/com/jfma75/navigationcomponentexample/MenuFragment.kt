@@ -15,7 +15,7 @@ class MenuFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
-        binding.textView.setOnClickListener {
+        binding.btnFirst.setOnClickListener {
             findNavController().navigate(R.id.secondFragment)
         }
 
